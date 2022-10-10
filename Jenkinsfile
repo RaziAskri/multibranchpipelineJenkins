@@ -28,7 +28,7 @@ pipeline {
 
       when {
 
-        branch "dev-*"
+        branch "dev*"
 
       }
 
@@ -48,7 +48,7 @@ pipeline {
 
       when {
 
-        branch "ops-*"
+        branch "feature*"
 
       }
 
