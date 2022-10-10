@@ -44,6 +44,25 @@ pipeline {
 
     }
 
+    stage('cat OPENME.md') {
+
+     when {
+
+       branch "ops-*"
+     
+     }
+
+     steps {
+
+
+       sh '''
+      
+         cat OPENME.md
+
+       '''
+
+       }
+}
   }
 
 }
