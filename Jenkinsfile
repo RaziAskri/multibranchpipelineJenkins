@@ -28,7 +28,7 @@ pipeline {
 
       when {
 
-        branch "fix-*"
+        branch "dev-*"
 
       }
 
