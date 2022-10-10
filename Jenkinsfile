@@ -44,11 +44,11 @@ pipeline {
 
     }
 
-    stage('cat OPENME.md') {
+    stage('open all files: master login') {
 
      when {
 
-       branch "ops-*"
+       branch "master"
      
      }
 
@@ -56,13 +56,19 @@ pipeline {
 
 
        sh '''
-      
+         
+         cat README.md
          cat OPENME.md
 
        '''
 
        }
 }
+
+
+
+
+
   }
 
 }
